@@ -9,13 +9,13 @@ const About = () => {
         <h2 className="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
         <div className="md:flex md:flex-row md:items-center">
           <div className="md:w-1/2 max-w-xl md:mx-auto mb-6 md:mb-0 md:pr-6 text-center">
-            <p className="text-lg text-gray-600 leading-relaxed mt-2">
+            <p className="text-lg text-gray-600 leading-relaxed mt-2 p-2">
               Hi, I'm Leon, a passionate web developer with a keen eye for design
               and a commitment to creating exceptional web experiences. My goal is
               to build websites that not only look stunning but are also intuitive
               and user-friendly.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed mt-4">
+            <p className="text-lg text-gray-600 leading-relaxed mt-4 p-2">
               I specialize in front-end development and have expertise in HTML,
               CSS, JavaScript, and various modern web development frameworks. I'm
               dedicated to staying up-to-date with the latest web technologies to
