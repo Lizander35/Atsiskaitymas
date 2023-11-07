@@ -1,16 +1,35 @@
+$hero-height: 600px;
+
+@mixin hero-section($image) {
+  background-image: url('../assets/images/#{$image}.jpg');
+  height: $hero-height;
+};
+
 .hero {
-  background-image: url('../assets/images/coding.jpg');
-  height: 600px;
+  @include hero-section('coding');
 }
+
 .heroContact {
-  background-image: url('../assets/images/contact.jpg');
-  height: 600px;
+  @include hero-section('contact');
 }
+
 .heroTestimonial {
-  background-image: url('../assets/images/testimonial.jpg');
-  height: 600px;
+  @include hero-section('testimonial');
 }
+
 .usersHero {
-  background-image: url('../assets/images/users.jpg');
-  height: 600px;
+  @include hero-section('users');
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-title {
+  animation: fadeIn 1s ease-in-out;
 }
